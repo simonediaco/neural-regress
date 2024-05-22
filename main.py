@@ -42,10 +42,9 @@ def main():
     plt.title('MSE vs. Neurons in Hidden Layer (Confronto dei Dataset)')
     plt.xlabel('Number of Neurons')
     plt.ylabel('Mean Squared Error')
+    plt.yscale('log')
     plt.legend()
     plt.grid(True)
-
-    plt.ylim(bottom=0)
 
     plots_dir = './plots'
     os.makedirs(plots_dir, exist_ok=True)

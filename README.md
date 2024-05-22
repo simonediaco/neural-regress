@@ -1,38 +1,37 @@
 # Neural Regressor
 
-## Descrizione
-Questo progetto implementa una serie di modelli di rete neurale feedforward per prevedere valori target da dataset di regressione. Attraverso l'uso di TensorFlow e Keras, il progetto esplora l'impatto di diversi numeri di neuroni nello strato nascosto sulla performance del modello, misurata tramite l'errore quadratico medio (MSE).
+## Description
+This project implements a series of feedforward neural network models to predict target values from regression datasets. Using TensorFlow and Keras, the project explores the impact of different numbers of neurons in the hidden layer on the model's performance, measured by the mean squared error (MSE).
 
-## Configurazione
+## Installation
+To set up the environment, follow these steps:
 
-1. Clona il repository del progetto:
+1. Clone the project repository:
+   ```bash
+   git clone https://github.com/simonediaco/neural-regress.git
+   ```
+2. Navigate to the project folder
+   ```bash
+   cd neural-regress
+   ```
+3. Create and activate a virtual environment (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   ```
+4. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+## Usage
+To run the analysis and visualize the results, execute the main script:
+   ```bash
+   python main.py
+   ```
+This script will read the provided datasets, train the neural network models, and generate a plot showing the mean squared error (MSE) as a function of the number of neurons in the hidden layer, comparing both datasets.
 
-    ```git clone URL_DEL_REPOSITORY ```
+## Result
+The resulting plot shows the Mean Squared Error (MSE) as a function of the number of neurons in the hidden layer for both datasets:
 
-2. Crea e attiva un ambiente virtuale (opzionale):
+![MSE vs. Neurons in Hidden Layer (Dataset Comparison)](./plots/mse_plot_comparison.png)
 
-    ``` ```
-
-    ``` ```
-
-3. Installa le dipendenze necessarie:
-
-    ``` ```
-
-    ``` ```
-## Run
-
-
-## Risultati
-
-### Dataset Wizmir
-
-La figura seguente mostra chiaramente come il Mean Squared Error (MSE) varia in funzione del numero di neuroni nello strato nascosto delle reti neurali utilizzate per il dataset Wizmir.
-
-![MSE vs. Neurons in Hidden Layer (Wizmir)](./plots/mse_plot_wizmir.png)
-
-### Dataset Ele2
-
-La figura seguente mostra chiaramente come il Mean Squared Error (MSE) varia in funzione del numero di neuroni nello strato nascosto delle reti neurali utilizzate per il dataset Ele2.
-
-![MSE vs. Neurons in Hidden Layer (Ele2)](./plots/mse_plot_ele2.png)
